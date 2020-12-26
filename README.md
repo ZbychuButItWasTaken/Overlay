@@ -10,6 +10,8 @@ It uses a specific file naming format, soon to be implememnted for EWS-G1 in htt
 The format is:
 `prefix_channel_yyyyMMddTHHmmssZ.png`, so for example `EWS-G1_5_20201121T084100Z.png` would mean Image from EWS-G1 taken on 08:41 UTC on 21/11/2020, Channel 5.
 
+For now editing the misc text (for example sugnature) is done in the code, by replacing the "Your text/signature here" with your desired text.
+
 ## Instalation
 ### It requires [libpng](https://github.com/glennrp/libpng) and [zlib](https://github.com/madler/zlib)!
 This program uses Cmake, so compiling would be done like this:
