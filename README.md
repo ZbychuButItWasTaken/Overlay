@@ -23,3 +23,5 @@ cmake ..
 make
 sudo make install
 ```
+## Example image from EWS-G1
+![Example Image](/images/out2k.png)
