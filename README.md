@@ -12,6 +12,8 @@ The format is:
 
 For now editing the misc text (for example sugnature) is done in the code, by replacing the "Your text/signature here" with your desired text.
 
+NOTE: By default the program accepts 16bit depth greyscale images.
+
 ## Instalation
 ### It requires [libpng](https://github.com/glennrp/libpng) and [zlib](https://github.com/madler/zlib)!
 This program uses Cmake, so compiling would be done like this:
