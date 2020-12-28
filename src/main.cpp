@@ -9,7 +9,7 @@
 
 std::string sat_name;
 std::string date_time;
-std::string misc_text = "Zbigniew Sztanga | Station #01";
+std::string misc_text = "Your text/signature here";
 
 int offsetX, offsetY, bar_height;
 unsigned int text_size;
