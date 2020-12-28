@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
     if (seglist[0]=="EWS-G1")
     sat_name += "/GOES-13";
     sat_name += " | Band " + seglist[1];
-    if (seglist[1]=="5" && (seglist[0]=="EWS-G1" || seglist[0]=="FY-2G" || seglist[0]=="FY-2H")) sat_name += " (VIS)";
+    if (seglist[1]=="1" && (seglist[0]=="EWS-G1" || seglist[0]=="FY-2G" || seglist[0]=="FY-2H")) sat_name += " (VIS)";
 
     cimg_library::CImg<unsigned short> imgtext,imgtext1, imgtext2, inimage(argv[1]);
 
