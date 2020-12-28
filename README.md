@@ -2,13 +2,15 @@
 Small program to put text on your sat images (or any images really)
 
 ## Usage
-Using the program is really simple. It takes two arguments: in and out. An example command would look like this:
+Using the program is really simple. It takes two arguments (in and out) and 2 optional flags (-8 -r). An example command would look like this:
 
-`Overlay EWS-G1_5_20201121T084100Z.png EWS-G1_5_20201121T084100Z_overlay.png`
+`Overlay -i EWS-G1_5_20201121T084100Z.png -o EWS-G1_5_20201121T084100Z_overlay.png -8 -r`
 It uses a specific file naming format, soon to be implememnted for EWS-G1 in https://github.com/altillimity/GVAR-Ingestor.
 
 The format is:
 `prefix_channel_yyyyMMddTHHmmssZ.png`, so for example `EWS-G1_5_20201121T084100Z.png` would mean Image from EWS-G1 taken on 08:41 UTC on 21/11/2020, Channel 5.
+
+The flags enable user to use Overlay on 8 bit deep images and RGB images. when using the `-8` flagm the program will assume in and out are 8 bits (if otherwize weird things can happen). The `-r` flag will set the program ro RGB mode, where input and output will be RGB (if in was not RGB it can result in weird things happening). If only `-r` flag is uesd, it will gererate 48bit image output.
 
 For now editing the misc text (for example sugnature) is done in the code, by replacing the "Your text/signature here" with your desired text.
 
