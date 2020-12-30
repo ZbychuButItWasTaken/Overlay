@@ -24,7 +24,7 @@ float offsetYratio = 0.0025;
 int main(int argc, char *argv[])
 {
     //TClap stuff
-    TCLAP::CmdLine cmd("MHS Decoder by Zbychu", ' ', "1.0");
+    TCLAP::CmdLine cmd("Overlay by Zbychu", ' ', "1.0");
 
     // Define the arguments
     TCLAP::SwitchArg valueDepth("8", "8bit", "whether to use 8 bit depth", false);
