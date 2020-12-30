@@ -10,9 +10,9 @@ It uses a specific file naming format, soon to be implememnted for EWS-G1 in htt
 The format is:
 `prefix_channel_yyyyMMddTHHmmssZ.png`, so for example `EWS-G1_5_20201121T084100Z.png` would mean Image from EWS-G1 taken on 08:41 UTC on 21/11/2020, Channel 5.
 
-The flags enable user to use Overlay on 8 bit deep images and RGB images. when using the `-8` flagm the program will assume in and out are 8 bits (if otherwize weird things can happen). The `-r` flag will set the program ro RGB mode, where input and output will be RGB (if in was not RGB it can result in weird things happening). If only `-r` flag is uesd, it will gererate 48bit image output.
+The flags enable user to use Overlay on 8 bit deep images and RGB images. when using the `-8` flag the program will assume in and out are 8 bits (if otherwise weird things can happen). The `-r` flag will set the program ro RGB mode, where input and output will be RGB (if in was not RGB it can result in weird things happening). If only `-r` flag is uesd, it will gererate 48bit image output.
 
-For now editing the misc text (for example sugnature) is done in the code, by replacing the "Your text/signature here" with your desired text.
+For now editing the misc text (for example signature) is done in the code, by replacing the "Your text/signature here" with your desired text.
 
 NOTE: By default the program accepts 16bit depth greyscale images.
 
