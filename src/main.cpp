@@ -9,7 +9,7 @@
 
 std::string sat_name;
 std::string date_time;
-std::string misc_text = "Zbigniew Sztanga | Station #01";
+std::string misc_text = "Your text/signature here";
 
 int offsetX, offsetY, bar_height;
 unsigned int text_size;
@@ -50,17 +50,15 @@ int main(int argc, char *argv[])
     bool is8bit = valueDepth.getValue();
     bool rgb = valueChannel.getValue();
 
+    std::string filename = valueInput.getValue();
 
-    std::stringstream inpath(valueInput.getValue());
-    std::string pathsegment;
-    std::vector<std::string> pathseglist;
-    while (std::getline(inpath, pathsegment, '/'))
+    const size_t last_slash_idx = filename.find_last_of("\\/");
+    if (std::string::npos != last_slash_idx)
     {
-        pathseglist.push_back(pathsegment);
+        filename.erase(0, last_slash_idx + 1);
     }
 
-    std::string inname = pathseglist.back();
-    std::stringstream instream(inname);
+    std::stringstream instream(filename);
     std::string segment;
     std::vector<std::string> seglist;
 
